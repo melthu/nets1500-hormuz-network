@@ -1,0 +1,7 @@
+country_iso3,volume_loss_pct,rerouting_cost_pct,exposure_score,energy_cpi_change_pct
+KOR,0.3994,5.0,2.3962,5.0121
+USA,0.0427,5.0,0.2561,13.7941
+GBR,0.0566,0.0,0.0566,5.3665
+DEU,0.0417,0.0,0.0417,7.9132
+ISR,0.022,0.0355,0.0228,1.0475
+COL,0.0001,0.0,0.0001,-1.3741

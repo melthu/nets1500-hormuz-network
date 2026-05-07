@@ -1,0 +1,10 @@
+networkx
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+geopandas
+scikit-learn
+plotly
+requests

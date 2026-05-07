@@ -1,0 +1,7 @@
+country_iso3,country_name,pct_price_change,source
+KOR,South Korea,5.0121,OECD Energy CPI (CP045_0722)
+DEU,Germany,7.9132,OECD Energy CPI (CP045_0722)
+GBR,United Kingdom,5.3665,OECD Energy CPI (CP045_0722)
+USA,United States,13.7941,OECD Energy CPI (CP045_0722)
+ISR,Israel,1.0475,OECD Energy CPI (CP045_0722)
+COL,Colombia,-1.3741,OECD Energy CPI (CP045_0722)
