@@ -1,7 +1,5 @@
 # Can Oil Trade Networks Predict Energy Price Shocks? A Hormuz Closure Case Study
 
-**NETS 1500 | Melvin Thu | melthu@seas.upenn.edu**
-
 ---
 
 ## Motivation
