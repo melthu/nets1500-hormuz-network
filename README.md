@@ -32,13 +32,17 @@ Two quantities are computed per importing country.
 
 **Volume loss** uses max flow to find the maximum oil volume reachable from WORLD_SUPPLY to the importer, before and after closure. Max flow is appropriate here because it accounts for the full capacity structure of the network, not just direct Gulf imports. The drop gives volume loss:
 
-$$\text{volume\_loss} = \frac{\text{flow\_before} - \text{flow\_after}}{\text{flow\_before}}$$
+```
+volume_loss = (flow_before - flow_after) / flow_before
+```
 
-**Rerouting cost** assigns each edge a cost of $1 / (\text{capacity} + 1)$, so established high-volume routes are cheap and obscure routes are expensive. Dijkstra's shortest path is run from each importer's top three suppliers before and after closure. The rerouting cost is the percentage increase in average path cost. If a supplier becomes completely unreachable after closure, a cap of 500% is applied.
+**Rerouting cost** assigns each edge a cost of `1 / (capacity + 1)`, so established high-volume routes are cheap and obscure routes are expensive. Dijkstra's shortest path is run from each importer's top three suppliers before and after closure. The rerouting cost is the percentage increase in average path cost. If a supplier becomes completely unreachable after closure, a cap of 500% is applied.
 
 The combined exposure score is:
 
-$$\text{exposure} = \text{volume\_loss} \times (1 + \text{rerouting\_cost})$$
+```
+exposure = volume_loss x (1 + rerouting_cost)
+```
 
 Rerouting cost acts as a multiplier. A country that loses 50% of supply with no alternatives scores higher than one that loses 50% but can substitute from other suppliers.
 
